@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/adaptive/10/user/323171).
-* Наставник: `Неизвестно`.
+* Студент: [nov101](https://up.htmlacademy.ru/adaptive/10/user/323171).
+* Наставник: [Александр Калинин](https://htmlacademy.ru/profile/id311377).
 
 ---
 

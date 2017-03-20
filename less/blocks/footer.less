@@ -1,0 +1,15 @@
+.footer {
+  background-color: @bg-color;
+}
+
+.footer__wrapper {
+  .flex();
+  flex-direction: column;
+  .wrapper-container();
+
+  .media(tablet; {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  });
+}

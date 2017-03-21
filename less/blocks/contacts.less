@@ -42,7 +42,7 @@
   margin-bottom: 30px;
   width: 100%;
 
-   .media(tablet; {
+  .media(tablet; {
     .set-font(43px; 50px);
   });
   .media(desktop; {
@@ -82,38 +82,38 @@
 
 
 .contacts__address {
-   &--text {
+  &--text {
   padding-left: 28px;
   }
 }
 
 .contacts__map {
-    background-color: #faf3ea;
-    margin-bottom: 0px;
+  background-color: #faf3ea;
+  margin-bottom: 0px;
 
-    .media(desktop; {
-      position: absolute;
-      right: 50px;
-      top: 0;
-    });
-  }
+  .media(desktop; {
+    position: absolute;
+    right: 50px;
+    top: 0;
+  });
+}
 
 .contacts__img,
 .contacts__frame {
-    width: 320px;
+  width: 320px;
+  height: 457px;
+  .media(tablet; {
+    width: 768px;
     height: 457px;
-    .media(tablet; {
-      width: 768px;
-      height: 457px;
-    });
-    .media(desktop; {
-      width: 525px;
-      height: 457px;
-    });
-    &--hidden {
-      display: none;
-    }
+  });
+  .media(desktop; {
+    width: 525px;
+    height: 457px;
+  });
+  &--hidden {
+    display: none;
   }
+}
 
 
 

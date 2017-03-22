@@ -1,0 +1,77 @@
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color;
+  border: 2px solid @color;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: @btn-bg;
+    color: #ffffff;
+    border: 2px solid @btn-bg;
+  }
+
+  &:active {
+    background-color: @btn-bg;
+    color:  @down-btn-txt;
+    border: 2px solid @btn-bg;
+  }
+
+  &--features-order,
+  &--review-write,
+  &--contacts-write,
+  &--add,
+  &--send,
+  &--buy {
+    width: 260px;
+  }
+
+  &--add {
+    color: #ffffff;
+    background-color: @dark-turquoise;
+    border: none;
+  }
+
+  &--buy {
+    display: none;
+  }
+
+  &--play {
+    display: none;
+  }
+
+  &--order {
+    .set-font(17px; 16px);
+    margin-left: 28px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    .media(tablet {
+      margin-left: 43px;
+      margin-right: 43px;
+      margin-bottom: 45px;
+      });
+    .media(desktop; {
+      margin-left: 78px;
+      margin-right: 58px;
+    });
+  }
+
+  &--send {
+    background-color: #ffffff;
+
+  }
+
+  &--review-write {
+    .media(tablet; {
+    position: absolute;
+    top: 0;
+    right: 0;
+  });
+  }
+
+}

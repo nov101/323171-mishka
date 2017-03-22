@@ -1,0 +1,101 @@
+.slogan {
+  .flex();
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid @line;
+}
+
+.slogan__wrapper{
+  background-image: url('../img/hero-mobile@1x.jpg');
+  background-position: center -15px;
+  background-repeat: no-repeat;
+  .wrapper-container();
+  &--title {
+    .flex();
+    justify-content: center;
+  }
+}
+
+.slogan__title {
+  .set-font(27px; 30px);
+  text-align: center;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 123px;
+  width: 68%;
+  opacity: 0.45;
+
+  .media(tablet; {
+    .set-font(43px; 50px);
+    opacity: 1;
+    padding-top: 154px;
+    padding-bottom: 372px;
+  });
+
+  .media(desktop; {
+    .set-font(53px; 57px);
+    opacity: 1;
+    padding-top: 155px;
+    padding-bottom: 359px;
+  });
+}
+
+.slogan__items {
+  .flex();
+  flex-direction: column;
+
+  .media(tablet; {
+    flex-direction: row;
+  });
+}
+
+.slogan__link {
+  position: relative;
+  width: 50%;
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-top: 28px;
+  padding-bottom: 31px;
+
+    &--interior {
+      background-color: @dark-turquoise;
+
+      &:hover {
+        background-color: @hvr-interior;
+        margin-top: -5px;
+      }
+
+      &:active {
+        background-color:@hvr-interior;
+        color: #8be2d0;
+      }
+    }
+
+    &--toys {
+      background-color: #56c3b2;
+
+      &:hover {
+        background-color: @hvr-toys;
+        margin-top: -5px;
+      }
+
+      &:active {
+        background-color: @hvr-toys;
+        color: #7ed4c6;
+      }
+    }
+}
+
+.slogan__icon {
+  position: absolute;
+  right: 35px;
+}
+
+.slogan__link h2 {
+    .set-font(19px; 24px);
+    font-weight: bold;
+    width: 145px;
+  }

@@ -1,5 +1,10 @@
 .order-other {
-  margin-bottom: 28px;
+  margin-bottom: 54px;
+
+  .media(tablet; {
+    margin-bottom: 34px;
+  });
+
 }
 
 .order-other__wrapper {
@@ -21,17 +26,19 @@
   .set-font(17px; 16px);
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   color: @dark-turquoise;
 
   .media(tablet; {
     width: 167px;
     text-align: left;
+    padding-top: 29px;
   });
 
   .media(desktop; {
-    width: 175px;
+    width: 165px;
     text-align: center;
+    margin-right: 10px;
   });
 
   &:after {
@@ -59,11 +66,15 @@
   color: #c7c7c7;
 
   .media(tablet; {
-    width: 500px;
+    width: 501px;
+    height: 143px;
+    .set-font(19px; 18px);
+    margin-bottom: 53px;
   });
 
   .media(desktop; {
     width: 700px;
+    margin-bottom: 49px;
   });
 
   &:hover {
@@ -77,8 +88,11 @@
 
 .order-other__footnote {
   .set-font(14px; 16px);
+  margin-bottom: 32px;
 
   .media(tablet; {
     order: 1;
+    .set-font(17px; 30px);
+    padding-top: 8px;
   });
 }

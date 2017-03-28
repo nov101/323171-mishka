@@ -1,70 +1,123 @@
 .review {
-  margin-top: 30px;
-  margin-bottom: 53px;
-
-}
-
-.review__wrapper {
-  padding-left: 28px;
-  padding-right: 28px;
-  .flex();
-  flex-direction: column;
-  .wrapper-container();
+  margin-top: 35px;
+  margin-bottom: 47px;
 
   .media(tablet; {
-    position: relative;
-    background: url('../img/review@1x.jpg') no-repeat;
+    margin-bottom: 117px;
   });
 
   .media(desktop; {
+    margin-top: 25px;
+    margin-bottom: 160px;
+  });
+}
+
+.review__wrapper {
+  .flex();
+  flex-direction: column;
+  /*padding-left: 28px;
+  padding-right: 28px;*/
+  .wrapper-container();
+  position: relative;
+
+  .media(tablet; {
+    /*padding-left: 45px;
+    padding-right: 45px;*/
+
+    &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -50px;
+    width: 350px;
+    height: 457px;
+    background-color: @bg-color;
+    z-index: -10;
+    background: url('../img/review@1x.jpg') no-repeat;
+    }
+  });
+
+   .media(desktop; {
     padding-left: 175px;
+
+    &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 457px;
+    background-color: @bg-color;
+    z-index: -10;
+    background: url('../img/review@1x.jpg') no-repeat;
+    }
   });
 }
 
 .review__title {
   .set-font(25px; 30px);
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
-  .media(tablet; {
+   .media(tablet; {
     .set-font(43px; 50px);
+    margin-top: 75px;
+    margin-bottom: 49px;
+    margin-left: -5px;
   });
 
   .media(desktop; {
     .set-font(53px; 57px);
+    margin-top: 73px;
+    margin-bottom: 47px;
   });
 }
 
 .review__text {
   .set-font(15px; 30px);
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+
   .media(tablet; {
     .set-font(17px; 30px);
+    margin-bottom: 60px;
+  });
+
+  .media(desktop; {
+
+
+    margin-bottom: 38px;
   });
 }
 
 .review__author {
   .set-font(18px; 24px);
   font-weight: bold;
+  font-style: normal;
 }
 
 .review__address {
-  .set-font(17px; 30px);
+  .set-font(17px; 35px);
+  font-style: normal;
 }
 
 .review__controls {
   .flex();
+  width: 100%;
   align-self: flex-start;
   justify-content: center;
-  padding-top: 35px;
-  padding-bottom: 7px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  border: 1px solid @line;
 
   .media(tablet; {
     position: absolute;
-    right: 49px;
+    right: 0px;
     bottom: 0px;
+    width: 167px;
+    margin-bottom: 5px;
+    border: none;
   });
 
   .media(desktop; {
-    bottom: 38px;
+    bottom: 0px;
   });
 }

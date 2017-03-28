@@ -1,8 +1,14 @@
 .order-contacts {
   .flex();
   flex-direction: column;
-  margin-bottom: 28px;
-  background-color: @bg-color;
+
+
+  .media(tablet; {
+    padding-top: 63px;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+    background-color: @bg-color;
+  });
 }
 
 .order-contacts__wrapper {
@@ -25,12 +31,13 @@
   position: relative;
   .flex();
   flex-direction: column;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   color: @dark-turquoise;
 
   .media(tablet; {
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-bottom: 39px;
   });
 
   &:after {
@@ -57,12 +64,28 @@
   .media(tablet; {
     width: 167px;
     text-align: left;
+    padding-bottom: 0px;
   });
 
   .media(desktop; {
-    width: 175px;
+    width: 165px;
     text-align: center;
+    margin-right: 10px;
   });
+
+  &--phone {
+    .media(desktop; {
+      padding-right: 10px;
+    });
+  }
+
+  &--email {
+    .media(desktop; {
+      padding-top: 2px;
+      padding-left: 10px;
+    });
+  }
+
 }
 
 .order-contacts__input {
@@ -77,6 +100,7 @@
 
   .media(tablet; {
     width: 500px;
+    padding-bottom: 12px;
   });
 
   .media(desktop; {
@@ -84,15 +108,15 @@
   });
 
   &:hover {
-    border-left: 1px solid @dark-turquoise;
-    border-right: 1px solid @dark-turquoise;
+   /* border-left: 1px solid @dark-turquoise;
+    border-right: 1px solid @dark-turquoise;*/
     border-bottom: 2px solid @dark-turquoise;
   }
 
   &:focus {
     color: #000000;
-    border-left: 1px solid @dark-turquoise;
-    border-right: 1px solid @dark-turquoise;
+    /*border-left: 1px solid @dark-turquoise;
+    border-right: 1px solid @dark-turquoise;*/
     border-bottom: 2px solid @dark-turquoise;
     outline: none;
   }

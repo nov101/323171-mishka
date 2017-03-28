@@ -1,6 +1,15 @@
 .about {
-  margin-top: 30px;
+  padding-top: 40px;
   margin-bottom: 55px;
+
+  .media(tablet; {
+    padding-top: 48px;
+    margin-bottom: 48px;
+  });
+
+  .media(desktop; {
+    margin-bottom: 0;
+  });
 }
 
 .about__wrapper {
@@ -20,10 +29,13 @@
 
   .media(tablet; {
     .set-font(43px; 50px);
+    margin-bottom: 22px;
   });
 
   .media(desktop; {
     .set-font(53px; 57px);
+    margin-top: 10px;
+    margin-left: -5px;
   });
 }
 
@@ -34,24 +46,37 @@
 
   .media(tablet; {
     max-height: 470px;
-  });
+   });
+
   .media(desktop; {
+    align-content: flex-start;
+
     max-height: 500px;
   });
 }
 
 .about__text {
-  .set-font(17px; 20px);
-  font-weight: bold;
-  padding-top: 80px;
+ .set-font(17px; 20px);
+ font-weight: bold;
+ padding-top: 83px;
 
   .media(tablet; {
-    width: 297px;
-    padding-top: 80px;
-    padding-bottom: 28px;
+    .set-font(20px; 22px);
+    width: 50%;
+    padding-top: 81px;
+    padding-bottom: 29px;
+    padding-right: 94px;
   });
 
   .media(desktop; {
     width: 350px;
   });
+}
+
+.about__text:nth-child(n+3) {
+  .media(tablet; {
+    padding-right: 34px;
+  });
+
+
 }

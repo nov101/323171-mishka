@@ -2,19 +2,32 @@
   .flex();
   background-color: #f1f1f1;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   border-top: 1px solid @line;
+
+  .media(tablet; {
+    margin-bottom: 79px;
+  });
+
+  .media(desktop; {
+    margin-bottom: 146px;
+  });
 }
 
 
 .promo__title {
   .set-font(27px, 30px);
   font-weight: bold;
-
-  padding-top: 75px;
+  padding-top: 71px;
   padding-bottom: 75px;
 
   .media(tablet; {
-    padding-top: 100px;
-    })
+    .set-font(43px; 50px);
+    padding-top: 92px;
+  });
+
+  .media(desktop; {
+    .set-font(53px; 57px);
+    padding-top: 93px;
+  });
 }

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Вязание на заказ</title>
+    <title>HTML Academy - Mishka</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="order-color__item">
                   <input type="checkbox" class="order-color__input" name="color-3" id="color-3">
-                  <label for="color-3" class="order-color__label">"Тиффани"</label>
+                  <label for="color-3" class="order-color__label">&laquo;Тиффани&raquo;</label>
                 </div>
                 <div class="order-color__item">
                   <input type="checkbox" class="order-color__input" name="color-4" id="color-4">
@@ -116,11 +116,11 @@
               <div class="order-customer__list">
                 <div class="order-customer__item order-customer__item--name">
                   <label for="first_name" class="order-customer__label">Имя:</label>
-                  <input type="text" class="order-customer__input" name="first_name" id="first_name" placeholder="Введите ваше имя *">
+                  <input type="text" class="order-customer__input" name="first_name" id="first_name" placeholder="Введите ваше имя *" required>
                 </div>
                 <div class="order-customer__item order-customer__item--surname">
                   <label for="surname" class="order-customer__label">Фамилия:</label>
-                  <input type="text" class="order-customer__input" name="surname" id="surname" placeholder="Укажите фамилию *">
+                  <input type="text" class="order-customer__input" name="surname" id="surname" placeholder="Укажите фамилию *" required>
                 </div>
                 <div class="order-customer__item order-customer__item--patronymic">
                   <label for="patronymic" class="order-customer__label">Отчество:</label>
@@ -135,11 +135,11 @@
               <div class="order-contacts__list">
                 <div class="order-contacts__item order-contacts__item--phone">
                   <h2 class="order-contacts__description order-contacts__description--phone">Тел</h2>
-                  <input type="tel" class="order-contacts__input" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
+                  <input type="tel" class="order-contacts__input" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
                 </div>
                 <div class="order-contacts__item order-contacts__item--email">
                   <h2 class="order-contacts__description order-contacts__description--email">E-mail</h2>
-                  <input type="email" class="order-contacts__input" name="email" id="email" placeholder="Ваш Email*">
+                  <input type="email" class="order-contacts__input" name="email" id="email" placeholder="Ваш Email*" required>
                 </div>
               </div>
             </div>
@@ -159,19 +159,24 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a>Mishka</a>
+        </div>
+
         <div class="social">
           <a href="#" class="social__item social__item--insta">Instagram</a>
           <a href="#" class="social__item social__item--fb">Facebook</a>
           <a href="#" class="social__item social__item--tw">Twitter</a>
         </div>
 
-        <div class="footer-copyright">
-          <span class="footer-copyright__text">Разработано</span>
-          <a href="http://htmlacademy.ru" class="footer-copyright__link">HTML Academy</a>
+        <div class="footer-author">
+          <span class="footer-author__text">Разработано</span>
+          <a href="http://htmlacademy.ru" class="footer-author__link">HTML Academy</a>
         </div>
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
+
   </body>
 </html>

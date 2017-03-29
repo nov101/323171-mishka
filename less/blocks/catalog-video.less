@@ -6,7 +6,7 @@
   .media(desktop; {
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: flex-start;
     text-align: left;
   });
 }
@@ -51,12 +51,17 @@
 
 .catalog-video__text {
   width: 232px;
+  margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 35px;
+  /*margin-right: 40px;*/
+  .set-font(13px; 24px);
 
   .media(tablet {
     width: 584px;
     margin-left: 43px;
     margin-right: 43px;
+    .set-font(15px; 30px);
   });
 
   .media(desktop; {

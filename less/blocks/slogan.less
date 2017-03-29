@@ -7,14 +7,26 @@
 }
 
 .slogan__wrapper{
-  background-image: url('../img/hero-mobile@1x.jpg');
-  background-position: center -15px;
-  background-repeat: no-repeat;
+
   .wrapper-container();
+
   &--title {
     .flex();
     justify-content: center;
+    background-image: url('../img/hero-mobile@1x.jpg');
+    background-position: center -15px;
+    background-repeat: no-repeat;
+  };
+
+  &--items {
+    padding-left: 0;
+    padding-right: 0;
+
+    .media(tablet; {
+      .wrapper-container();
+    });
   }
+
 }
 
 .slogan__title {
@@ -22,18 +34,20 @@
   text-align: center;
   margin: 0;
   padding-top: 70px;
-  padding-bottom: 123px;
-  width: 68%;
-  opacity: 0.45;
+  padding-bottom: 121px;
+  width: 243px;
+  /*opacity: 0.45;*/
 
   .media(tablet; {
+    width: 500px;
     .set-font(43px; 50px);
     opacity: 1;
-    padding-top: 154px;
-    padding-bottom: 372px;
+    padding-top: 152px;
+    padding-bottom: 374px;
   });
 
   .media(desktop; {
+    width: 616px;
     .set-font(53px; 57px);
     opacity: 1;
     padding-top: 155px;
@@ -42,7 +56,7 @@
 }
 
 .slogan__items {
-  .flex();
+  display: flex;
   flex-direction: column;
 
   .media(tablet; {
@@ -52,13 +66,17 @@
 
 .slogan__link {
   position: relative;
-  width: 50%;
+  width: 100%;
   text-decoration: none;
   color: #ffffff;
-  padding-left: 29px;
-  padding-right: 29px;
-  padding-top: 28px;
-  padding-bottom: 31px;
+
+  /*background-color: #63d1bb;*/
+
+  .media(tablet; {
+    width: 50%;
+
+    padding-left: 36px;
+  });
 
     &--interior {
       background-color: @dark-turquoise;
@@ -66,6 +84,7 @@
       &:hover {
         background-color: @hvr-interior;
         margin-top: -5px;
+        padding-bottom: 5px;
       }
 
       &:active {
@@ -80,6 +99,7 @@
       &:hover {
         background-color: @hvr-toys;
         margin-top: -5px;
+        padding-bottom: 5px;
       }
 
       &:active {
@@ -98,4 +118,12 @@
     .set-font(19px; 24px);
     font-weight: bold;
     width: 145px;
-  }
+    padding-left: 27px;
+    padding-right: 29px;
+    padding-top: 26px;
+    padding-bottom: 29px;
+
+  .media(tablet; {
+    .set-font(20px; 30px);
+  });
+}

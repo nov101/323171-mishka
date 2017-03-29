@@ -10,15 +10,15 @@
 }
 
 .main-nav__top {
-  .flex();
+  display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   min-height: 79px;
   padding-left: 30px;
   padding-right: 30px;
   .media(tablet; {
-    position: static;
+    width: 100%;
     justify-content: flex-start;
     padding-left: 0;
     padding-right: 0;
@@ -209,6 +209,8 @@
 
     .media(tablet; {
       display: flex;
+      width: 48%;
+      margin-left: auto;
       order: 5;
       justify-content: flex-end;
       align-items: center;

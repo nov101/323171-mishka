@@ -2,14 +2,15 @@
   margin-bottom: 30px;
 
   .media(tablet; {
-    padding-top: 47px;
+    padding-top: 38px;
     padding-bottom: 69px;
     margin-bottom: 0;
+    margin-left: -2px;
   });
 
   .media(desktop; {
-    padding-top: 73px;
-    padding-bottom: 97px;
+    padding-top: 68px;
+    padding-bottom: 74px;
   });
 }
 
@@ -47,7 +48,7 @@
 
 .features__promo-label {
   padding-bottom: 24px;
-  .set-font(17px; 20px);
+  .set-font(17px; 18px);
   font-weight: bold;
   color: @dark-turquoise;
   text-transform: uppercase;
@@ -65,14 +66,16 @@
   .media(desktop; {
     position: absolute;
     top: 68px;
-    left: 30px;
+    left: 31px;
   })
 }
 
 .features__descriptions {
   /*position: relative;*/
 
+
   .media(tablet; {
+    width: 290px;
     .flex();
     flex-direction: column;
   });
@@ -91,7 +94,7 @@
     });
 
     .media(desktop; {
-      top: 0px;
+      top: 3px;
       width: 525px;
       height: 635px;
     });
@@ -101,31 +104,33 @@
 .features__text {
   .set-font(15px; 24px);
   margin-bottom: 17px;
-  padding-right: 18px;
+ /* padding-right: 18px;*/
 
   .media(tablet; {
     .set-font(17px; 30px);
     margin-top: -9px;
     margin-bottom: 34px;
-    width: 50%;
-    padding-right: 53px;
+    padding-right: 0;
   });
 
   .media(desktop; {
-    width: 350px;
-    margin-bottom: 46px;
+    width: 100%;
+    margin-bottom: 50px;
+
   });
 }
 
 .features__performance {
   margin-bottom: 26px;
 
+
   .media(tablet; {
+    width: 100%;
     margin-bottom: 55px;
   });
 
   .media(desktop; {
-    margin-bottom: 103px;
+    margin-bottom: 105px;
   });
 }
 
@@ -136,10 +141,13 @@
   padding-bottom: 6px;
   padding-right: 27px;
 
-  .media(desktop; {
-    padding-top: 6px;
-    padding-bottom: 9px;
+  .media(tablet; {
+    padding-right: 0px;
   });
+  .media(desktop; {
+    padding-top: 3px;
+    padding-bottom: 10px;
+   });
 }
 
 .features__price {
@@ -148,18 +156,23 @@
   .flex();
   width: 100%;
   justify-content: center;
+  margin-top: 20px;
   margin-bottom: 27px;
 
   .media(tablet; {
     .set-font(20px; 24px);
-    width: 43%;
+    margin-top: 0;
     margin-bottom: 35px;
-    padding-left: 13px;
+    padding-left: 9px;
   });
 
   .media(desktop; {
     width: 350px;
     padding-left: 0;
     padding-right: 48px;
-  });
+   });
 }
+
+
+
+

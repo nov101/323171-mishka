@@ -1,28 +1,47 @@
 .form-order {
   .flex();
   flex-direction: column;
+  margin-top: 25px;
+
+  .media(tablet; {
+    margin-top: 75px;
+  });
+
+  .media(desktop; {
+    margin-top: 125px;
+  });
 }
 
 .form-order__wrapper {
-  padding-bottom: 28px;
+
   padding-left: 28px;
-  padding-right: 28px;
+  padding-right: 38px;
+  margin: 0 auto;
   .wrapper-container();
+  .media(tablet; {
+    .wrapper-container();
+    padding-bottom: 28px;
+  });
+  .media(desktop; {
+    padding-bottom: 0px;
+  });
 }
 
 .form-order__text {
   .set-font(13px; 24px);
   margin-bottom: 22px;
+  padding-right: 10px;
 
   .media(tablet; {
     .set-font(17px; 30px);
     margin-bottom: 50px;
+    padding-right: 0;
   });
 
   .media(desktop; {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 51px;
+    margin-bottom: 47px;
   });
 }

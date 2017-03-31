@@ -3,10 +3,32 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  border-bottom: 1px solid @line;
-  padding-top: 24px;
-  padding-bottom: 30px;
+  align-items: center;
+  border-bottom: 2px solid @line;
+ /* padding-top: 24px;*/
+  padding-bottom: 24px;
+  margin-right: 5px;
+  font-size: 0;
   .media(tablet; {
+    margin-right: 0px;
+    padding-bottom: 0px;
     border: none;
   });
+}
+
+.social__item {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+
+
+  svg {
+    &:hover {
+      fill: @hvr-toys;
+    }
+
+    &:active {
+      fill: #bde3dd;
+    }
+  }
 }

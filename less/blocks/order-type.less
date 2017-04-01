@@ -33,6 +33,7 @@
     width: 165px;
     text-align: center;
     margin-right: 10px;
+    padding-top: 27px;
   });
 
   &:after {
@@ -52,6 +53,10 @@
 
 .order-type__list {
   padding-top: 5px;
+
+  .media(desktop; {
+    padding-top: 8px;
+  });
 }
 
 .order-type__item {
@@ -61,6 +66,7 @@
   flex-direction: row;
 
   .media(tablet; {
+    .set-font(19px; 18px);
     margin-bottom: 19px;
   });
 }

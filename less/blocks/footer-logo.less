@@ -1,6 +1,21 @@
 .footer__logo {
   display: none;
+
   .media(tablet; {
     .flex();
+    font-size: 0;
+    width: 180px;
   });
+
+  svg {
+
+    &:hover {
+      fill: @hvr-toys;
+    }
+
+    &:active {
+      fill: #bde3dd;
+    }
+  }
+
 }

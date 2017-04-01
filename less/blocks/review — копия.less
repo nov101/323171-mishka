@@ -21,21 +21,36 @@
   position: relative;
 
   .media(tablet; {
+    /*padding-left: 45px;
+    padding-right: 45px;*/
 
+    &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -50px;
+    width: 350px;
     height: 457px;
-    padding-left: 80px;
+    background-color: @bg-color;
+    z-index: -10;
     background: url('../img/review@1x.jpg') no-repeat;
-    background-size: 350px;
-
+    }
   });
 
   .media(desktop; {
-
     padding-left: 175px;
-    height: 457px;
-    background: url('../img/review@2x.jpg') no-repeat;
-    background-size: 350px;
 
+    &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 457px;
+    background-color: @bg-color;
+    z-index: -10;
+    background: url('../img/review@2x.jpg') no-repeat;
+    }
   });
 }
 

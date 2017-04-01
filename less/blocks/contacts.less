@@ -5,7 +5,6 @@
   .media(tablet; {
     padding-top: 55px;
     margin-left: -7px;
-
   });
 
   .media(desktop; {
@@ -15,6 +14,17 @@
     padding-top: 96px;
     margin-bottom: 46px;
   });
+
+  &::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0px;
+    width: 100%;
+    height: 23px;
+    background: transparent url("../img/bg-zigzag-line.svg") repeat-x;
+    background-size: contain;
+  }
 }
 
 .contacts__wrapper {
@@ -36,11 +46,13 @@
     margin-bottom: 38px;
     .media(tablet; {
     justify-content: center;
-    margin-top: 58px;
+    margin-top: 56px;
     margin-bottom: 58px;
     });
     .media(desktop; {
-    justify-content: flex-start;
+      margin-top: 52px;
+      padding-left: 170px;
+      justify-content: flex-start;
     });
   }
 }
@@ -50,28 +62,53 @@
   font-weight: bold;
   margin-bottom: 26px;
   width: 100%;
+  position: relative;
 
   .media(tablet; {
     .set-font(43px; 50px);
     margin-top: 21px;
     margin-bottom: 49px;
+
+    &::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: -15px;
+    right: 0;
+    width: 47px;
+    height: 82px;
+    background: transparent url("../img/icon-flag.svg") no-repeat;
+    }
   });
+
   .media(desktop; {
     .set-font(53px; 57px);
     margin-top: 71px;
     margin-left: -5px;
     margin-bottom: 47px;
+
+    &::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: -10px;
+    left: -106px;
+    width: 47px;
+    height: 82px;
+    background: transparent url("../img/icon-flag.svg") no-repeat;
+    }
   });
+
 }
 
 .contacts__item {
   display: flex;
   justify-content: flex-start;
-  padding-bottom: 33px;
+  /*padding-bottom: 34px;*/
 
   .media(tablet; {
     width: 334px;
-    padding-bottom: 57px;
+/*    padding-bottom: 61px;*/
   });
 
   .media(desktop; {
@@ -86,17 +123,32 @@
   }
 
   &--email {
+    padding-bottom: 34px;
+    .media(tablet; {
+      padding-bottom: 57px;
+    });
     .media(desktop; {
       padding-bottom: 31px;
     });
   }
+
+  &--address {
+    padding-bottom: 39px;
+    .media(tablet; {
+      padding-bottom: 57px;
+    });
+    .media(desktop; {
+      padding-bottom: 31px;
+    });
+  }
+
 }
 
 .contacts__email {
   .set-font(15px; 30px);
 
   &--text {
-    margin-left: 28px;
+    margin-left: 25px;
     color: #000000;
     text-decoration: none;
     border-bottom-color: @hvr-placeholder;
@@ -119,11 +171,15 @@
   .set-font(15px; 30px);
   padding-left: 27px;
   padding-right: 44px;
-  margin-top: -2px;
+  margin-top: -4px;
 
   .media(tablet; {
       .set-font(17px; 30px);
       margin-top: 0;
+  });
+
+  .media(desktop; {
+    margin-top: -2px;
   });
   }
 }
@@ -140,7 +196,6 @@
     margin-right: -50px;
   });
 
-
   .media(desktop; {
     margin-left: 0;
     margin-right: 0;
@@ -148,7 +203,6 @@
     width: 525px;
     right: 0px;
     top: 0px;
-
   });
 }
 

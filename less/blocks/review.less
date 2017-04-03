@@ -15,33 +15,44 @@
 .review__wrapper {
   .flex();
   flex-direction: column;
-  /*padding-left: 28px;
-  padding-right: 28px;*/
   .wrapper-container();
   position: relative;
 
   .media(tablet; {
 
-    height: 457px;
-    padding-left: 80px;
-    background: url('../img/review@1x.jpg') no-repeat;
-    background-size: 350px;
-
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -50px;
+      width: 350px;
+      height: 457px;
+      background-color: @bg-color;
+      z-index: -10;
+      background: url('../img/review@1x.jpg') no-repeat;
+    }
   });
 
-  .media(desktop; {
+ .media(desktop; {
+  padding-left: 175px;
 
-    padding-left: 175px;
-    height: 457px;
-    background: url('../img/review@2x.jpg') no-repeat;
-    background-size: 350px;
-
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 350px;
+      height: 457px;
+      background-color: @bg-color;
+      z-index: -10;
+      background: url('../img/review@2x.jpg') no-repeat;
+    }
   });
 }
 
 .review__title {
   .set-font(25px; 30px);
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 
   .media(tablet; {
     .set-font(43px; 50px);
@@ -63,11 +74,10 @@
 
   .media(tablet; {
     .set-font(17px; 30px);
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   });
 
   .media(desktop; {
-
     padding-right: 90px;
     margin-bottom: 38px;
   });
@@ -88,42 +98,39 @@
   .flex();
   width: 100%;
   max-height: 53px;
-  /* align-self: flex-start;*/
   justify-content: space-between;
   margin-top: 27px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding-top: 13px;
   padding-bottom: 20px;
   border: 1px solid @line;
-
-
 
   .media(tablet; {
     position: absolute;
     right: 0px;
     bottom: 0px;
-    width: 178px;
+    width: 175px;
     margin-bottom: 5px;
     border: none;
+    padding-top: 14px;
   });
 
   .media(desktop; {
-    width: 135px;
-    padding-top: 17px;
-    margin-right: 18px;
+    width: 138px;
+    padding-top: 15px;
+    margin-right: 17px;
     bottom: 0px;
   });
+}
 
-  .review__btn {
-    &:hover svg{
-        fill: @hvr-txt;;
-    }
-
-    &:active svg{
-      fill: @down-txt;
-    }
+.review__btn svg{
+  &:hover {
+    fill: @hvr-txt;;
   }
 
+  &:active {
+    fill: @down-txt;
+  }
 }
 
 .review__btn {
@@ -132,13 +139,12 @@
   text-align: center;
 
   .media(desktop; {
-  &--prev {
-    text-align: left;
-  }
+    &--prev {
+      text-align: left;
+    }
 
-  &--next {
-    text-align: right;
-  }
+    &--next {
+      text-align: right;
+    }
   });
-
 }

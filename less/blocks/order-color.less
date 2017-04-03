@@ -1,7 +1,6 @@
 .order-color {
   margin-bottom: 19px;
 
-
   .media(tablet; {
     padding-top: 41px;
     padding-bottom: 38px;
@@ -45,7 +44,7 @@
   });
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 64px;
     top: 9px;
@@ -62,7 +61,6 @@
 .order-color__list {
   .flex();
 
-
   .media(tablet; {
     width: 500px;
     flex-direction: row;
@@ -72,7 +70,6 @@
   .media(desktop; {
     width: 789px;
   });
-
 }
 
 .order-color__item {
@@ -81,7 +78,7 @@
   font-weight: bold;
   .flex();
   flex-direction: row;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 
   .media(tablet; {
     width: 240px;
@@ -102,14 +99,11 @@
   }
 }
 
-
-
-.order-color__input[type='checkbox'] {
+.order-color__input[type="checkbox"] {
   display: none;
 }
 
 .order-color__input {
-/* background: 0 0;*/
   border: none;
   border-bottom: 2px solid #000;
   outline: none;
@@ -125,30 +119,28 @@
   position: relative;
   cursor: pointer;
   padding-top: 19px;
-  padding-left: 60px;
-  padding-bottom: 9px;
+  padding-left: 62px;
+  padding-bottom: 10px;
 
   .media(tablet; {
-      .set-font(20px; 24px);
-      padding-top: 22px;
-      padding-left: 80px;
-      padding-bottom: 15px;
+    .set-font(20px; 24px);
+    padding-top: 22px;
+    padding-left: 80px;
+    padding-bottom: 15px;
   });
 
-
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0px;
     top: 10px;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 34px;
     border: 2px solid @color;
-    box-sizing: border-box;
 
     .media(tablet; {
-      width: 54px;
-      height: 53px;
+      width: 50px;
+      height: 48px;
     });
   }
 
@@ -167,18 +159,18 @@
 
 .order-color__input:checked + .order-color__label:after {
   background: @hvr-placeholder;
-  content: '';
+  content: "";
   position: absolute;
   width: 23px;
-    height: 23px;
-    background: url('../img/icon-tick.svg') no-repeat 50% 50%;
+  height: 23px;
+  background: url("../img/icon-tick.svg") no-repeat 50% 50%;
   left: 10px;
   top: 16px;
 
   .media(tablet; {
-      top: 22px;
-      left: 11px;
-      width: 31px;
-      height: 30px;
-    });
+    top: 20px;
+    left: 12px;
+    width: 31px;
+    height: 30px;
+  });
 }

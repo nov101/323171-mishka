@@ -1,16 +1,17 @@
 .features {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  margin-left: -1px;
 
   .media(tablet; {
-    padding-top: 38px;
-    padding-bottom: 69px;
+    padding-top: 37px;
+    padding-bottom: 55px;
     margin-bottom: 0;
     margin-left: -2px;
   });
 
   .media(desktop; {
     padding-top: 68px;
-    padding-bottom: 74px;
+    padding-bottom: 76px;
   });
 }
 
@@ -28,20 +29,21 @@
 .features__title {
   .set-font(25px; 30px);
   padding-top: 28px;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   margin: 0;
+  margin-left: 3px;
 
   .media(tablet; {
     .set-font(43px; 50px);
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 57px;
     flex-grow: 1;
   });
 
   .media(desktop; {
-    padding-top: 56px;
+    padding-top: 54px;
     padding-bottom: 57px;
-    margin-left: -5px;
+    margin-left: -1px;
     .set-font(53px; 57px);
   });
 }
@@ -59,20 +61,19 @@
     vertical-align: baseline;
     text-align: center;
     width: 100px;
-    top: 9px;
-    right: 11px;
+    top: 10px;
+    right: 12px;
   });
 
   .media(desktop; {
     position: absolute;
-    top: 68px;
-    left: 31px;
+    top: 70px;
+    left: 33px;
+    line-height: 16px;
   })
 }
 
 .features__descriptions {
-  /*position: relative;*/
-
 
   .media(tablet; {
     width: 290px;
@@ -85,26 +86,25 @@
   z-index: -1;
   margin-bottom: 18px;
 
-    .media(tablet; {
-      position: absolute;
-      right: 0;
-      top: 110px;
-      width: 334px;
-      height: 404px;
-    });
+  .media(tablet; {
+    position: absolute;
+    right: -1px;
+    top: 106px;
+    width: 334px;
+    height: 404px;
+  });
 
-    .media(desktop; {
-      top: 3px;
-      width: 525px;
-      height: 635px;
-    });
+  .media(desktop; {
+    top: 3px;
+    width: 525px;
+    height: 635px;
+  });
 }
 
 
 .features__text {
   .set-font(15px; 24px);
-  margin-bottom: 17px;
-  /* padding-right: 18px;*/
+  margin-bottom: 20px;
 
   .media(tablet; {
     .set-font(17px; 30px);
@@ -121,16 +121,17 @@
 }
 
 .features__performance {
-  margin-bottom: 26px;
-
+  margin-bottom: 29px;
 
   .media(tablet; {
     width: 100%;
     margin-bottom: 55px;
+    margin-left: -3px;
   });
 
   .media(desktop; {
-    margin-bottom: 105px;
+    margin-bottom: 112px;
+    margin-left: 0;
   });
 }
 
@@ -144,6 +145,7 @@
   .media(tablet; {
     padding-right: 0px;
   });
+
   .media(desktop; {
     padding-top: 3px;
     padding-bottom: 10px;
@@ -156,8 +158,9 @@
   .flex();
   width: 100%;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 27px;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  margin-left: 0px;
 
   .media(tablet; {
     .set-font(20px; 24px);

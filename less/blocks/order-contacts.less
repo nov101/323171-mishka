@@ -2,9 +2,8 @@
   .flex();
   flex-direction: column;
 
-
   .media(tablet; {
-    padding-top: 63px;
+    padding-top: 64px;
     padding-bottom: 8px;
     margin-bottom: 40px;
     background-color: @bg-color;
@@ -31,17 +30,18 @@
   position: relative;
   .flex();
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   color: @dark-turquoise;
 
   .media(tablet; {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 39px;
+    align-items: flex-start;
   });
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 64px;
     top: 9px;
@@ -53,48 +53,29 @@
       display: none;
     });
   }
+}
 
-  svg {
-    position: absolute;
-    content: "";
-    bottom: 10px;
-    right: 5px;
-    fill: #cccccc;
+.order-contacts__item--phone svg {
+  right: 9px;
+  bottom: 17px;
 
-    &:hover{
-      fill: @dark-turquoise;
-    }
+  .media(tablet; {
+    bottom: 18px;
+    right: 23px;
+  });
 
-    &:active{
-      fill: @dark-turquoise;
-    }
+  .media(desktop; {
+    bottom: 18px;
+    right: 181px;
+  });
 
-    .media(tablet; {
-      bottom: 10px;
-      right: 20px;
-    });
+  /*input:hover + & {
+    fill: #cccdef;
+  }*/
+}
 
-    .media(desktop; {
-      bottom: 10px;
-      right: 178px;
-    });
-  }
-
-  &--phone {
-    svg {
-      right: 9px;
-      bottom: 17px;
-
-      .media(tablet; {
-        bottom: 18px;
-        right: 23px;
-      });
-      .media(desktop; {
-        bottom: 18px;
-        right: 181px;
-      });
-    }
-  }
+input:hover + .order-contacts__item--phone svg {
+  fill: #cccdef;
 }
 
 .order-contacts__description {
@@ -106,7 +87,7 @@
   .media(tablet; {
     width: 167px;
     text-align: left;
-    padding-bottom: 0px;
+    margin-bottom: 0;
   });
 
   .media(desktop; {
@@ -124,10 +105,9 @@
   &--email {
     .media(desktop; {
       padding-top: 2px;
-      padding-left: 10px;
+      padding-left: 13px;
     });
   }
-
 }
 
 .order-contacts__input {
@@ -135,15 +115,16 @@
   border-left: none;
   border-right: none;
   border-bottom: 2px solid #000000;
-
   padding-bottom: 16px;
   color: #c7c7c7;
   background: transparent;
 
   .media(tablet; {
+    .set-font(19px; 18px);
     width: 500px;
     padding-left: 15px;
     padding-bottom: 12px;
+    margin-top: -3px;
   });
 
   .media(desktop; {
@@ -159,4 +140,30 @@
     border-bottom: 2px solid @dark-turquoise;
     outline: none;
   }
+}
+
+.order-contacts__icon {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  right: 5px;
+  fill: #cccccc;
+
+  .media(tablet; {
+    bottom: 10px;
+    right: 20px;
+  });
+
+  .media(desktop; {
+    bottom: 10px;
+    right: 178px;
+  });
+}
+
+.order-contacts__input:hover + .order-contacts__icon {
+  fill: @dark-turquoise;
+}
+
+.order-contacts__input:focus + .order-contacts__icon {
+  fill: @dark-turquoise;
 }
